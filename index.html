@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirección Aleatoria</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // URLs de tus tres formularios
+            const urls = [
+                'https://docs.google.com/forms/d/TU_FORMULARIO_1',
+                'https://docs.google.com/forms/d/TU_FORMULARIO_2',
+                'https://docs.google.com/forms/d/TU_FORMULARIO_3'
+            ];
+
+            // Elige una URL aleatoria
+            const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+
+            // Redirecciona inmediatamente
+            window.location.href = randomUrl;
+        });
+    </script>
+</head>
+<body>
+    <p>Redirigiendo al formulario...</p>
+</body>
+</html>
